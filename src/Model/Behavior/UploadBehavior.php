@@ -46,7 +46,7 @@ class UploadBehavior extends Behavior
             }
         }
 
-        $this->setConfig($configs);
+        $this->setConfig($configs, null, 'shallow');
         $this->setConfig('className', null);
 
         $schema = $this->_table->getSchema();
